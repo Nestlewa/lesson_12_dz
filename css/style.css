@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    background-blend-mode: screen;
+    background:
+        linear-gradient(limegreen, transparent),
+        linear-gradient(90deg, skyblue, transparent),
+        linear-gradient(-90deg, coral, transparent);
+}
+.wrapper{
+    padding: 30px;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    background-color: transparent;
+    z-index: 100;
+}
+.header__body{
+    font-size: 0;
+}
+h1{
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(8, 143, 77);
+    margin-bottom: 20px;
+}
+.header__list{
+    max-width: 800px;
+    margin: 0 auto
+}
+.list__item{
+    display: inline-block;
+}
+.list__item:nth-child(1){
+    margin: 0 200px 0 50px;
+}
+.list__link{
+   display: inline-block;
+   font-size: 20px;
+   border: 4px solid rgb(8, 143, 77);
+   border-radius: 10px;
+   padding: 8px 16px;
+   transition: all 0.3s ease 0s;
+}
+
+.list__item:hover .list__link{
+    background: linear-gradient(135deg, #5de5aa 0%, #1ab95a 100%);
+    transform: scale(1.2);
+}
+
+#properties{
+    padding-top: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 170px;
+    position: relative;
+}
+.main__picture{
+    width: 200px;
+	height: 200px;
+    border-radius: 15px;
+    margin: 0 auto 50px;
+	background: linear-gradient(135deg, #5de5aa 0%, #1ab95a 100%);
+    position: relative;
+    transition: all 0.8s ease 0s;
+}
+
+.main__image{
+    max-width: 128px;
+    position: absolute;
+    top: 36px;
+    left: 36px;
+}
+.main__picture:hover{
+    transform: scale(1.2);
+}
+
+.main__image_first{
+    transition: all 0.8s ease 0s;
+}
+.main__picture:hover .main__image_first{
+    transform: translate(20px, 30px) scale(1.5) rotate(20deg);
+    opacity: 0.5;
+}
+
+.main__image_second{
+    transition: all 0.8s ease 0s;
+}
+.main__picture:hover .main__image_second{
+    transform: translate(20%, 0) rotate(-90deg);
+}
+
+.main__picture_three{
+    transition: all 0.8s ease 0s;
+}
+.main__picture_three:hover{
+    background: linear-gradient(135deg, #f69b77bc 0%, #f74b1b 100%);
+    transform: scale(1.2) rotate(-90deg);
+    /* transition: all 0.8s ease 0s; */
+}
+.main__picture_three:hover .main__image_third{
+    transform: rotate(90deg);
+    transition: all 0.8s ease 0s;
+}
+
+.main__image_fourth{
+    transition: all 0.8s ease 0s;
+}
+
+.main__picture:hover .main__image_fourth{
+    transform: rotate(90deg);
+    transform-origin: top;
+    /* transition: all 0.8s ease 0s; */
+}
+
+
+.main__picture_five:hover{
+    transform: none;
+    perspective: 400px;
+}
+.main__image_fifth{
+    transition: all 2s ease 0s;
+}
+.main__picture_five:hover .main__image_fifth{
+    width: 100%;
+    height: 100%;
+    transform: rotateX(90deg);
+    /* transition: all 2s ease 0s; */
+}
+
+
+.main__picture_six:hover{
+    transform: none;
+    perspective: 400px;
+    perspective-origin: right top;
+}
+.main__image_sixth{
+    transition: all 2s ease 0s;
+}
+.main__picture_six:hover .main__image_sixth{
+    width: 100%;
+    height: 100%;
+    transform: rotateX(60deg);
+    /* transition: all 2s ease 0s; */
+}
+
+.main__image_seventh{
+    transition: all 1s ease 0s;
+}
+.main__picture_seven:hover .main__image_seventh{
+    transform: rotate3d(2, 50, 10, -90deg);
+    /* transition: all 1s ease 0s; */
+}
+.main__image_eightht{
+    transition: all 3s ease 0s;
+    backface-visibility: hidden;
+}
+.main__picture_eight:hover{
+    transform-style: preserve-3d;
+    perspective: 300px;
+}
+.main__picture_eight:hover .main__image_eightht{
+    transform: rotateY(180deg);
+}
+
+
+
+
+/* Тренування перспективи */
+/* .footer__container{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(24, 181, 165, 0.2);
+    perspective: 800px;
+    perspective-origin: 0 0;
+}
+.footer__body{
+    width: 100%;
+    height: 100%;
+    transform: rotateX(45deg);
+} */
+
+.footer__pic{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.footer__pic:hover .footer__piace_first{
+    transform: translate(130px, -122px) scale(1.5);
+    transition: all 1s ease 0s;
+
+}
+.footer__pic:hover .footer__piace_second{
+    transform:rotate(-40deg) translate(352px, -93px);
+    transition: all 1s ease 0s;
+
+}
+.footer__pic:hover .footer__piace_third{
+    transform:rotate(-95deg) translate(285px, 440px) scale(1.5);
+    transition: all 1s ease 0s;
+
+}
